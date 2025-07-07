@@ -1,1 +1,108 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & IoT Future Trends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="animated">AI & IoT: The Future of Technology</h1>
+        <p>Exploring the convergence of Artificial Intelligence and Internet of Things</p>
+    </header>
+    
+    <div class="container">
+        <!-- Interactive Button -->
+        <button id="interactiveBtn" class="action-btn">Click Me to Change Color</button>
+        
+        <!-- Keypress Detection -->
+        <div class="keypress-area">
+            <h3>Try pressing any key:</h3>
+            <div class="keypress-display" id="keypressDisplay">Waiting for input...</div>
+        </div>
+        
+        <!-- Image Gallery -->
+        <h2>AI & IoT in Action</h2>
+        <div class="gallery" id="imageGallery">
+            <img src="https://source.unsplash.com/random/300x200/?ai" alt="AI Technology">
+            <img src="https://source.unsplash.com/random/300x200/?iot" alt="IoT Devices">
+            <img src="https://source.unsplash.com/random/300x200/?robot" alt="Robotics">
+            <img src="https://source.unsplash.com/random/300x200/?smartcity" alt="Smart City">
+        </div>
+        
+        <!-- Tabs Section -->
+        <h2>Future Trends</h2>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="ai">AI Trends</button>
+            <button class="tab-btn" data-tab="iot">IoT Trends</button>
+            <button class="tab-btn" data-tab="convergence">Convergence</button>
+        </div>
+        
+        <div class="tab-content active" id="ai">
+            <h3>Artificial Intelligence Trends</h3>
+            <p>AI is rapidly evolving with several key trends shaping its future:</p>
+            <ul>
+                <li><strong>Generative AI:</strong> Advanced models creating text, images, and code</li>
+                <li><strong>AI Ethics:</strong> Focus on responsible and explainable AI systems</li>
+                <li><strong>Edge AI:</strong> Moving AI processing closer to data sources</li>
+                <li><strong>AI-as-a-Service:</strong> Cloud-based AI solutions for businesses</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="iot">
+            <h3>Internet of Things Trends</h3>
+            <p>IoT continues to expand with these emerging trends:</p>
+            <ul>
+                <li><strong>5G IoT:</strong> Faster, more reliable connectivity for devices</li>
+                <li><strong>AIoT:</strong> Integration of AI with IoT for smarter systems</li>
+                <li><strong>Digital Twins:</strong> Virtual replicas of physical systems</li>
+                <li><strong>Smart Cities:</strong> Urban areas leveraging IoT for efficiency</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="convergence">
+            <h3>AI + IoT Convergence</h3>
+            <p>The combination of AI and IoT is creating powerful new capabilities:</p>
+            <ul>
+                <li><strong>Predictive Maintenance:</strong> AI analyzing IoT data to predict failures</li>
+                <li><strong>Autonomous Systems:</strong> Self-optimizing networks and devices</li>
+                <li><strong>Personalized Experiences:</strong> Adaptive environments based on user behavior</li>
+                <li><strong>Real-time Decision Making:</strong> Instant analysis of sensor data streams</li>
+            </ul>
+        </div>
+        
+        <!-- Secret Area (for double click) -->
+        <div class="secret-area" id="secretArea">
+            <p>You found the secret message! The future is bright with AI and IoT.</p>
+        </div>
+        
+        <!-- Form Validation -->
+        <h2>Join Our Newsletter</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <div class="error" id="nameError">Please enter your name</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <div class="error" id="emailError">Please enter a valid email</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password (min 8 characters):</label>
+                <input type="password" id="password" required minlength="8">
+                <div class="error" id="passwordError">Password must be at least 8 characters</div>
+            </div>
+            
+            <button type="submit" class="action-btn">Subscribe</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
